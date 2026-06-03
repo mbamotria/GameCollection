@@ -1,0 +1,134 @@
+.root {
+    -fx-font-family: "Segoe UI", "Liberation Sans", "Arial", sans-serif;
+    -fx-background-color:
+        radial-gradient(center 16% 12%, radius 55%, rgba(59, 130, 246, 0.30), transparent 72%),
+        radial-gradient(center 84% 4%, radius 52%, rgba(245, 158, 11, 0.18), transparent 74%),
+        radial-gradient(center 50% 88%, radius 58%, rgba(14, 165, 233, 0.14), transparent 74%),
+        linear-gradient(to bottom right, #020617, #0f172a 48%, #1e293b);
+}
+
+.label {
+    -fx-text-fill: #e2e8f0;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-padding: 12 18 12 18;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+    -fx-text-fill: white;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(2, 6, 23, 0.45), 20, 0.28, 0, 8);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6);
+    -fx-translate-y: -1;
+}
+
+.button:pressed {
+    -fx-translate-y: 1;
+}
+
+.secondary-action {
+    -fx-background-color: rgba(148, 163, 184, 0.16);
+    -fx-border-color: rgba(148, 163, 184, 0.22);
+    -fx-text-fill: #e2e8f0;
+}
+
+.secondary-action:hover {
+    -fx-background-color: rgba(148, 163, 184, 0.26);
+}
+
+.card-button {
+    -fx-alignment: TOP_LEFT;
+    -fx-min-height: 168px;
+    -fx-pref-height: 168px;
+    -fx-pref-width: 430px;
+    -fx-padding: 24;
+    -fx-background-radius: 26;
+    -fx-border-radius: 26;
+    -fx-background-color:
+        linear-gradient(to bottom right, rgba(59, 130, 246, 0.96), rgba(15, 23, 42, 0.96)),
+        linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1;
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(2, 6, 23, 0.52), 28, 0.28, 0, 12);
+}
+
+.card-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, rgba(96, 165, 250, 0.98), rgba(37, 99, 235, 0.92));
+}
+
+.choice-button {
+    -fx-pref-width: 160px;
+    -fx-pref-height: 78px;
+    -fx-font-size: 18px;
+}
+
+.primary-action {
+    -fx-background-color: linear-gradient(to bottom, #f59e0b, #f97316);
+}
+
+.primary-action:hover {
+    -fx-background-color: linear-gradient(to bottom, #fbbf24, #fb923c);
+}
+
+.board-cell {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 150px;
+    -fx-background-radius: 22;
+    -fx-border-radius: 22;
+    -fx-border-color: rgba(148, 163, 184, 0.22);
+    -fx-border-width: 1;
+    -fx-background-color: rgba(15, 23, 42, 0.58);
+    -fx-font-size: 36px;
+    -fx-font-weight: 900;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(2, 6, 23, 0.45), 16, 0.22, 0, 6);
+}
+
+.board-cell:hover {
+    -fx-background-color: rgba(59, 130, 246, 0.22);
+}
+
+.board-cell:disabled {
+    -fx-opacity: 1.0;
+}
+
+.target-button {
+    -fx-pref-width: 240px;
+    -fx-pref-height: 240px;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-font-size: 28px;
+    -fx-font-weight: 900;
+    -fx-background-color: linear-gradient(to bottom right, #f59e0b, #ef4444);
+    -fx-effect: dropshadow(gaussian, rgba(251, 146, 60, 0.35), 28, 0.25, 0, 10);
+}
+
+.target-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #fbbf24, #f97316);
+}
+
+.text-field {
+    -fx-background-color: rgba(15, 23, 42, 0.50);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(148, 163, 184, 0.22);
+    -fx-border-width: 1;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-text-fill: white;
+    -fx-padding: 12 14 12 14;
+}
+
+.text-field:focused {
+    -fx-border-color: rgba(96, 165, 250, 0.95);
+}
